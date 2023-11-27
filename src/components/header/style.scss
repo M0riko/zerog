@@ -1,0 +1,30 @@
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to right, #ff6b6b, #ffa07a);
+    margin: 0 auto;
+    height: 380px;
+    padding: 76px 124px;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    margin-top: 35px;
+}
+
+.title {
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 35px;
+}
+
+.text {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.steve {
+    img {
+        height: 440px;
+    }
+}
