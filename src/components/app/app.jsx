@@ -5,6 +5,7 @@ import './style.scss'
 import  NavBar from '../navBar/navBar';
 import Header from '../header/header';
 import Tabs from '../tabs/tabs';
+import Footer from '../footer/footer';
 
 const App = () => {
     return (
@@ -13,6 +14,7 @@ const App = () => {
             <div className="container">
                 <Header/>
                 <Tabs/>
+                <Footer/>
             </div>
         </div>
     );

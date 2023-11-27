@@ -11,10 +11,13 @@
 .tab-content {
     display: flex;
     margin-top: 50px;
+    justify-content: space-between;
 }
 
 .items {
     display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
 }
 
 .active {
@@ -25,8 +28,18 @@
     display: none;
 }
 
-.active-tab {
-
+.item {
+    width: 300px;
+    text-align: center;
+    .name {
+        color: white;
+        font-size: 25px;
+    }
+    .price {
+        margin-top: 10px;
+        color: #ff6b6b;
+        font-size: 20px;
+    }
 }
 
 .tab {
@@ -64,3 +77,30 @@
     }
 }
 
+button {
+   position: relative;
+   margin-top: 10px;
+   width: 100px;
+   height: 30px; 
+   background-color: #fd4242;
+   border: none;
+   border-radius: 5px;
+   &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    transition: all 0.2s;
+    }
+    transition: all .2s;
+   &:hover {
+    opacity: 70%;
+    &::after {
+        width: 100%;
+    }
+   }
+}
